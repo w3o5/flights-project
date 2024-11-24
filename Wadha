@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام توزيع الرحلات</title>
+</head>
+<body>
+    <h1>بحث عن الرحلات</h1>
+    <label for="departure">مدينة المغادرة:</label>
+    <select id="departure">
+        <option value="Riyadh">الرياض</option>
+        <option value="Jeddah">جدة</option>
+    </select>
+
+    <label for="arrival">مدينة الوصول:</label>
+    <select id="arrival">
+        <option value="Dubai">دبي</option>
+        <option value="Cairo">القاهرة</option>
+    </select>
+
+    <button onclick="searchFlights()">بحث</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>مدينة المغادرة</th>
+                <th>مدينة الوصول</th>
+                <th>وقت المغادرة</th>
+                <th>مدة الرحلة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- هنا تضاف النتائج -->
+        </tbody>
+    </table>
+
+    <script>
+        function searchFlights() {
+            // وظيفة البحث عن الرحلات
+            alert('تم الضغط على بحث!');
+        }
+    </script>
+</body>
+</html>
